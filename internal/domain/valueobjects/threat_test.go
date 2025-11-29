@@ -3,6 +3,7 @@ package valueobjects_test
 import (
 	"testing"
 
+	"github.com/pavanrkadave/tdd-security-analysis/internal/domain/valueobjects"
 	"github.com/stretchr/testify/assert"
 )
 
