@@ -12,3 +12,15 @@ func TestLikelihood_Rare_Exists(t *testing.T) {
 
 	assert.Equal(t, "RARE", likelihood.String())
 }
+
+func TestLikelihood_Occasional_Exists(t *testing.T) {
+	likelihood := valueobjects.Occasional
+
+	assert.Equal(t, "OCCASIONAL", likelihood.String())
+}
+
+func TestLikelihood_Frequent_Exists(t *testing.T) {
+	likelihood := valueobjects.Frequent
+
+	assert.Equal(t, "FREQUENT", likelihood.String())
+}
