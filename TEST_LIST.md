@@ -17,12 +17,12 @@
 ## Phase 2: Enum-like Value Objects
 
 ### Likelihood
-- [ ] Likelihood - RARE exists
-- [ ] Likelihood - OCCASIONAL exists
-- [ ] Likelihood - FREQUENT exists
-- [ ] Likelihood - String() returns correct name for RARE
-- [ ] Likelihood - String() returns correct name for OCCASIONAL
-- [ ] Likelihood - String() returns correct name for FREQUENT
+- [x] Likelihood - RARE exists
+- [x] Likelihood - OCCASIONAL exists
+- [x] Likelihood - FREQUENT exists
+- [x] Likelihood - String() returns correct name for RARE
+- [x] Likelihood - String() returns correct name for OCCASIONAL
+- [x] Likelihood - String() returns correct name for FREQUENT
 
 ### Impact
 - [ ] Impact - MARGINAL exists
