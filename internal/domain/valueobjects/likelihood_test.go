@@ -7,20 +7,20 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestLikelihood_Rare_Exists(t *testing.T) {
-	likelihood := valueobjects.Rare
+func TestLikelihood_AllValues_HaveCorrectString(t *testing.T) {
+	tests := []struct {
+		name       string
+		likelihood valueobjects.Likelihood
+		want       string
+	}{
+		{"Check Rare Exists", valueobjects.Rare, "RARE"},
+		{"Check Occasional Exists", valueobjects.Occasional, "OCCASIONAL"},
+		{"Check Frequent Exists", valueobjects.Frequent, "FREQUENT"},
+	}
 
-	assert.Equal(t, "RARE", likelihood.String())
-}
-
-func TestLikelihood_Occasional_Exists(t *testing.T) {
-	likelihood := valueobjects.Occasional
-
-	assert.Equal(t, "OCCASIONAL", likelihood.String())
-}
-
-func TestLikelihood_Frequent_Exists(t *testing.T) {
-	likelihood := valueobjects.Frequent
-
-	assert.Equal(t, "FREQUENT", likelihood.String())
+	for _, testItem := range tests {
+		t.Run(testItem.name, func(t *testing.T) {
+			assert.Equal(t, testItem.want, testItem.likelihood.String())
+		})
+	}
 }
