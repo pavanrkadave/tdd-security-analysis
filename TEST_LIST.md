@@ -7,12 +7,12 @@
 - [x] Threat - Name() returns the threat name
 
 ### Asset
-- [ ] Asset - can be created with name
-- [ ] Asset - Name() returns the asset name
+- [x] Asset - can be created with name
+- [x] Asset - Name() returns the asset name
 
 ### Measure
-- [ ] Measure - can be created with description
-- [ ] Measure - Description() returns the measure description
+- [x] Measure - can be created with description
+- [x] Measure - Description() returns the measure description
 
 ## Phase 2: Enum-like Value Objects
 
